@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  acceptance-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application server
+      run: npm start &
+      env:
+        CYPRESS_BASE_URL: 'http://localhost:3000'
+
+    - name: Run Cypress tests
+      uses: cypress-io/github-action@v2
+      with:
+        start: npm start
+        wait-on: 'http://localhost:3000'
+        wait-on-timeout: 120
+        config-file: cypress.config.js
+      env:
+        CYPRESS_baseUrl: 'http://localhost:3000'

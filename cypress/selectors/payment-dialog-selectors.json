@@ -1,0 +1,9 @@
+{
+    "total":"#totalm",
+    "nameField":"#name",
+    "country":"#country",
+    "city":"#city",
+    "card":"#card",
+    "month":"#month",
+    "year":"#year"
+}
