@@ -14,8 +14,8 @@ describe('login',()=>{
 
   const adminData = Cypress.config('adminCredentials')
   const userInfo = {
-    username: adminData.username, // Corrected to lowercase 'username'
-    password: adminData.Password // Corrected to uppercase 'Password'
+    username: adminData.username, 
+    password: adminData.Password 
   }
 
   it('signup on the website',()=> {

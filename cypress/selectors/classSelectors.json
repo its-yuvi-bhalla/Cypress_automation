@@ -1,3 +1,6 @@
 {
-    "btn":".btn"
+    "btn":".btn",
+    "productTitle":".card-title",
+    "navItem":".nav-item",
+    "purchaseMadeDialog":".sweet-alert"
 }

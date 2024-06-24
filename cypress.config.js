@@ -7,6 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl:'https://www.demoblaze.com/',
+    watchForFileChanges: false,
     adminCredentials: {
       username:'qa-auto-admin-user',
       Password:'DemoBlaze!345'

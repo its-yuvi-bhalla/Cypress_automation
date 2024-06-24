@@ -23,7 +23,7 @@ describe('login',()=>{
     cy.userLogin(userInfo.username, userInfo.password)
   })
   it('signup on the website',()=> {
-    cy.get(htmlSelectors.a).contains(label.logOut).click()
-    cy.get(htmlSelectors.a).contains(label.login).should('be.visible')
+    cy.get(htmlSelectors.a).contains(label.buttonLabels.logOut).click()
+    cy.get(htmlSelectors.a).contains(label.buttonLabels.login).should('be.visible')
   })
 })
