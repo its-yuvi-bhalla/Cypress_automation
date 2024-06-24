@@ -2,7 +2,7 @@
 
 this repository includes all acceptance test scripts run on cypress for  [Demo Blaze](https://www.demoblaze.com/index.html)
 
-##prerequisites for running tests
+## prerequisites for running tests
 - install cypress `npm install --save-dev cypress`
 - install node.js `npm i node`
  
